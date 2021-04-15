@@ -14,4 +14,6 @@ if __name__ == '__main__':
     for word in map(str.upper, list_words):
         print(word)
 
+    print('test')
+
 
