@@ -25,3 +25,5 @@ if __name__ == '__main__':
         print(num)
         if num > 1000000:
             break
+
+    print('test')
