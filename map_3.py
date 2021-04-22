@@ -4,6 +4,8 @@ from itertools import repeat
 def my_round(num):
     return round(num, 2)
 
+lambda num: round(num, 2)
+
 
 if __name__ == '__main__':
     my_floats = [
@@ -17,6 +19,9 @@ if __name__ == '__main__':
     ]
 
     print(list(map(my_round, my_floats)))
+    print(list(map(lambda num: round(num, 2),
+                   my_floats)))
+
     print(list(map(round,
                    my_floats, [2] * len(my_floats))))
     print(list(map(round,

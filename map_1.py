@@ -12,4 +12,6 @@ if __name__ == '__main__':
         (1.4, 2.9)
     ]
 
-    print(max(map(get_distance, pts)))
+    print(max(map(lambda p: (p[0] ** 2 + p[1] ** 2) ** 0.5
+                  , pts)))
+
